@@ -12,6 +12,7 @@
 #import "BaseJsonViewSearchView.h"
 #import "BaseJsonEditingStatusTableViewCell.h"
 #import "BaseJsonViewStepSearchModel.h"
+#import <PYBaseView/UIView+ChangeFrame.h>
 
 static NSString *const kBaseJsonViewTableViewCellId = @"kBaseJsonViewTableViewCellId";
 static NSString *const kBaseJsonEditingStatusTableViewCell = @"kBaseJsonEditingStatusTableViewCell";

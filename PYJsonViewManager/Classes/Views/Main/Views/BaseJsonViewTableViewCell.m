@@ -8,8 +8,9 @@
 
 
 #import "BaseJsonViewTableViewCell.h"
-#import "BaseObjectHeaders.h"
-#import "BaseViewHeaders.h"
+#import <PYBaseView/PYBaseView.h>
+#import <PYBaseView/UIView+ChangeFrame.h>
+#import <PYBaseStringHandler/PYBaseStringHandler.h>
 #import "BaseJsonViewCommon.h"
 
 @interface BaseJsonViewTableViewCell()

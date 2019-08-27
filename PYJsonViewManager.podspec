@@ -13,16 +13,17 @@ Pod::Spec.new do |s|
 链接：https://juejin.im/post/5d4f6c80e51d4561f64a07d6
                        DESC
 
-  s.homepage         = 'https://github.com/LiPengYue/PYJsonViewManager'
+  s.homepage         = 'https://github.com/LiPengYue/PYJsonHandler'
   
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'LiPengYue' => 'pengyue.li@yi23.net' }
-  s.source           = { :git => 'https://github.com/LiPengYue/PYJsonViewManager.git', :tag => s.version.to_s }
+  s.author           = { 'LiPengYue' => '15076299703@163.com' }
+  s.source           = { :git => 'https://github.com/LiPengYue/PYJsonHandler.git', :tag => s.version.to_s }
 
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'PYJsonViewManager/Classes/**/*'
 
+s.dependency 'PYBaseView'
 
 end

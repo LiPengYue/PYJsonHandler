@@ -11,9 +11,8 @@
 
 
 #import <Foundation/Foundation.h>
-#import "BaseViewHeaders.h"
-#import "BaseObjectHeaders.h"
-#import "BaseSize.h"
+#import <PYBaseView/PYBaseView.h>
+#import <PYBaseColorHandler/BaseColorHandler.h>
 #import "BaseJsonViewManager.h"
 #import "BaseJsonViewStepErrorModel.h"
 #import "BaseJsonViewStepNilModel.h"
@@ -44,11 +43,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 #define tableViewCellLeftFont [UIFont fontWithName:@"PingFangSC-Medium" size:12]
 #define tableViewCellColonLabelFont BaseFont.fontSCM(10)
-#define tableViewCellTagFont BaseFont.fontSCL(10)
-#define tableViewCellRightFont BaseFont.fontSCR(10)
-#define tableViewCellLevelFont BaseFont.fontSCL(12)
-#define textFieldFont BaseFont.fontSCR(12)
-#define tableViewCellBottomFoldLineButtonFont BaseFont.fontSCM(10)
+#define tableViewCellTagFont Font.fontSCL(10)
+#define tableViewCellRightFont Font.fontSCR(10)
+#define tableViewCellLevelFont Font.fontSCL(12)
+#define textFieldFont Font.fontSCR(12)
+#define tableViewCellBottomFoldLineButtonFont Font.fontSCM(10)
 
 #define BaseJsonViewSearchResultListTableViewCellFont BaseFont.fontSCR(12)
 
