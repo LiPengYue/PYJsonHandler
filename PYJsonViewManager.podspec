@@ -1,42 +1,28 @@
-#
-# Be sure to run `pod lib lint PYJsonViewManager.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
+
 
 Pod::Spec.new do |s|
   s.name             = 'PYJsonViewManager'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of PYJsonViewManager.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'BaseJsonViewController是一个用OC编写的提供了搜索、插入、编辑、查看路径、复制json/value等功能的Json可视化编辑工具'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+由于网络数据请求下来后，APP端对json原数据的展示并不明朗。 修改网络数据只能通过Charles等抓包工具实现，受到的限制太多，所以诞生了在APP端直接对json进行查看、修改的Json视图工具:BaseJsonViewController。
+后续会对BaseJsonViewController进行持续的更新优化，欢迎使用。
+
+作者：李yao~鹏
+链接：https://juejin.im/post/5d4f6c80e51d4561f64a07d6
                        DESC
 
   s.homepage         = 'https://github.com/LiPengYue/PYJsonViewManager'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'LiPengYue' => 'pengyue.li@yi23.net' }
   s.source           = { :git => 'https://github.com/LiPengYue/PYJsonViewManager.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'PYJsonViewManager/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'PYJsonViewManager' => ['PYJsonViewManager/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+
 end
