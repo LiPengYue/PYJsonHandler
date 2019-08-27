@@ -46,7 +46,7 @@ UITextFieldDelegate
 // MARK: - init
 
 + (instancetype)createWithFrame:(CGRect)frame {
-    BaseJsonViewEditHeaderView *editView = [[[NSBundle mainBundle] loadNibNamed:@"BaseJsonViewEditHeaderView" owner:self options:nil] lastObject];
+    BaseJsonViewEditHeaderView *editView = [[[NSBundle bundleForClass:BaseJsonViewEditHeaderView.class] loadNibNamed:@"BaseJsonViewEditHeaderView" owner:self options:nil] lastObject];
     return editView;
 }
 

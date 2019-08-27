@@ -51,7 +51,7 @@ UITableViewDataSource
     self.dataSource = self;
     self.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self registerClass:BaseJsonViewTableViewCell.class forCellReuseIdentifier:kBaseJsonViewTableViewCellId];
-    [self registerNib:[UINib nibWithNibName:@"BaseJsonEditingStatusTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:kBaseJsonEditingStatusTableViewCell];
+    [self registerNib:[UINib nibWithNibName:@"BaseJsonEditingStatusTableViewCell" bundle:[NSBundle bundleForClass:self.class]] forCellReuseIdentifier:kBaseJsonEditingStatusTableViewCell];
 }
 
 - (NSMutableArray<BaseJsonViewStepModel *> *)modelArray {

@@ -26,4 +26,10 @@ Pod::Spec.new do |s|
 
 s.dependency 'PYBaseView'
 
+#需要包含的图片,xib等资源文件
+#s.resources = 'PYJsonViewManager/Classes/**/*.{xib,nib,storyboard,png}'
+
+s.resource_bundles = {
+    'PYJsonViewManager' => ['PYJsonViewManager/Classes/**/*.{xib,nib,storyboard,png}']
+}
 end

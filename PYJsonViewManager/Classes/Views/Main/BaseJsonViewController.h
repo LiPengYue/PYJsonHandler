@@ -8,6 +8,7 @@
 
 
 #import <PYBaseView/PYBaseView.h>
+#import "BaseJsonHeaderView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

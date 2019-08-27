@@ -9,6 +9,7 @@
 #import "PYMainViewController.h"
 #import <PYBaseView.h>
 #import "PYDescriptionViewController.h"
+#import "DebugNetWorkViewController.h"
 
 @interface PYMainViewController ()
 
@@ -34,7 +35,7 @@
     [self.goDescription setupHandler:^(PYBaseButtonHandler * _Nonnull handler) {
         [handler adjustButtonStyleWithState:0];
     }];
-    self.goDescription.contentVerticalAlignment = UIControlContentVerticalAlignmentBottom;
+    
 }
 
 - (PYBaseButton *)goDemo {
@@ -56,7 +57,8 @@
 }
 
 - (void)click_goDemoButton {
-    
+    DebugNetWorkViewController *vc = [DebugNetWorkViewController new];
+    [self.navigationController pushViewController:vc animated:true];
 }
 
 - (PYBaseButton *)goDescription {

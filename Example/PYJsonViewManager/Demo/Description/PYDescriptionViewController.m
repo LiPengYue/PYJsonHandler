@@ -45,7 +45,6 @@
 - (void) setupNav {
     self.navBarView.addTitleItemWithTitleAndImg(@"jsonHandler",nil);
     self.navBarView.addLeftItemWithTitleAndImg(@"返回",nil);
-    self.navBarView.itemsEdge = UIEdgeInsetsMake(0, 0, -0, 0);
     [self.navBarView reloadView];
 }
 // MARK: handle event

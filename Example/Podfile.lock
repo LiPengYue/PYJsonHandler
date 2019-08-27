@@ -6,7 +6,7 @@ PODS:
     - FBSnapshotTestCase/Core
   - PYBaseColorHandler (0.1.1)
   - PYBaseStringHandler (0.1.1)
-  - PYBaseView (0.1.7):
+  - PYBaseView (0.1.8):
     - PYBaseColorHandler
     - PYBaseStringHandler
   - PYJsonViewManager (0.1.0):
@@ -31,8 +31,8 @@ SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   PYBaseColorHandler: 27c5875ddfd66672ca47a8d23930fde523720fda
   PYBaseStringHandler: 090d18d116158f49aabff465826c577b1f44f45f
-  PYBaseView: 0e5f50b7fcd85a872cd6f842f04881a7831f104e
-  PYJsonViewManager: 7e5b176c5c08ffd60da0c9645a5152977d937d34
+  PYBaseView: 7a3724b8ea9a502fdca62f5e5c675212194cf1f4
+  PYJsonViewManager: 86f092d4dc76604f43f987f8777ea2214aa11a3b
 
 PODFILE CHECKSUM: 5cec2fe8d83eeaf7e3a88ad049175d05f989db54
 
