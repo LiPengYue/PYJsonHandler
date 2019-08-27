@@ -7,12 +7,12 @@
 //
 
 
-#import "BaseViewController.h"
+#import <PYBaseView/PYBaseView.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 /// 必须保证 BaseJsonViewController 的NavigationController不为nil，否则会导致无法跳转新的控制器
-@interface BaseJsonViewController : BaseViewController
+@interface BaseJsonViewController : PYBaseViewController
 
 /**
  刷新数据

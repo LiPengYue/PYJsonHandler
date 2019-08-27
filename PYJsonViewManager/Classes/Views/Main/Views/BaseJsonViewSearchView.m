@@ -9,9 +9,7 @@
 
 #import "BaseJsonViewSearchView.h"
 #import "BaseJsonViewCommon.h"
-#import "BaseObjectHeaders.h"
-#import "BaseViewHeaders.h"
-#import "BaseSize.h"
+
 
 @interface BaseJsonViewSearchView ()
 <
@@ -171,7 +169,7 @@ UIScrollViewDelegate
         [_textFildBottomButton setTitleColor:leftTitleColor forState:UIControlStateNormal];
         _textFildBottomButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         [_textFildBottomButton addTarget:self action:@selector(click_textFildBottomButton) forControlEvents:UIControlEventTouchUpInside];
-        _textFildBottomButton.titleLabel.font = BaseFont.fontSCL(12);
+        _textFildBottomButton.titleLabel.font = PYFont.fontSCL(12);
         [_textFildBottomButton setTitle:@"搜索..." forState:UIControlStateNormal];
     }
     return _textFildBottomButton;
@@ -201,7 +199,7 @@ UIScrollViewDelegate
         _showResultVc.layer.borderWidth = 1;
         
         [_showResultVc setTitle:@"查看总览" forState:UIControlStateNormal];
-        _showResultVc.titleLabel.font = BaseFont.fontSCL(12);
+        _showResultVc.titleLabel.font = PYFont.fontSCL(12);
         
     }
     return _showResultVc;
@@ -227,7 +225,7 @@ UIScrollViewDelegate
         _scrollToNext.layer.borderColor = messageColor.CGColor;
         _scrollToNext.layer.borderWidth = 1;
         
-        _scrollToNext.titleLabel.font = BaseFont.fontSCL(12);
+        _scrollToNext.titleLabel.font = PYFont.fontSCL(12);
     }
     return _scrollToNext;
 }
@@ -253,7 +251,7 @@ UIScrollViewDelegate
         _scrollToFront.layer.cornerRadius = 6;
         _scrollToFront.layer.borderColor = messageColor.CGColor;
         _scrollToFront.layer.borderWidth = 1;
-        _scrollToFront.titleLabel.font = BaseFont.fontSCL(12);
+        _scrollToFront.titleLabel.font = PYFont.fontSCL(12);
     }
     return _scrollToFront;
 }
@@ -269,7 +267,7 @@ UIScrollViewDelegate
         _currentLevelTreeLabel.frame = CGRectMake(0,0,0,0);
         _currentLevelTreeLabel.backgroundColor = UIColor.whiteColor;
         _currentLevelTreeLabel.textAlignment = NSTextAlignmentLeft;
-        _currentLevelTreeLabel.font = BaseFont.fontSCL(9);
+        _currentLevelTreeLabel.font = PYFont.fontSCL(9);
         _currentLevelTreeLabel.textColor = normalColor;
         _currentLevelTreeLabel.numberOfLines = 0;
     }
@@ -367,7 +365,7 @@ UIScrollViewDelegate
         _accurateSearchButton.layer.cornerRadius = 13;
         _accurateSearchButton.layer.borderColor = messageColor.CGColor;
         _accurateSearchButton.layer.borderWidth = 1;
-        _accurateSearchButton.titleLabel.font = BaseFont.fontSCL(12);
+        _accurateSearchButton.titleLabel.font = PYFont.fontSCL(12);
         _accurateSearchButton.width = 70;
         _accurateSearchButton.height = 26;
         
@@ -397,7 +395,7 @@ UIScrollViewDelegate
         _searchEditingButton.layer.cornerRadius = 13;
         _searchEditingButton.layer.borderColor = messageColor.CGColor;
         _searchEditingButton.layer.borderWidth = 1;
-        _searchEditingButton.titleLabel.font = BaseFont.fontSCL(12);
+        _searchEditingButton.titleLabel.font = PYFont.fontSCL(12);
         _searchEditingButton.width = 70;
         _searchEditingButton.height = 26;
         

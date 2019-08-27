@@ -12,7 +12,9 @@
 
 #import <Foundation/Foundation.h>
 #import <PYBaseView/PYBaseView.h>
+#import <PYBaseView/UIView+ChangeFrame.h>
 #import <PYBaseColorHandler/BaseColorHandler.h>
+#import <PYBaseStringHandler/PYBaseStringHandler.h>
 #import "BaseJsonViewManager.h"
 #import "BaseJsonViewStepErrorModel.h"
 #import "BaseJsonViewStepNilModel.h"
@@ -42,14 +44,14 @@ NS_ASSUME_NONNULL_BEGIN
 #define deleteActionBackgroundColor [UIColor colorWithRed:0.9 green:0.8 blue:0.8 alpha:1]
 
 #define tableViewCellLeftFont [UIFont fontWithName:@"PingFangSC-Medium" size:12]
-#define tableViewCellColonLabelFont BaseFont.fontSCM(10)
-#define tableViewCellTagFont Font.fontSCL(10)
-#define tableViewCellRightFont Font.fontSCR(10)
-#define tableViewCellLevelFont Font.fontSCL(12)
-#define textFieldFont Font.fontSCR(12)
-#define tableViewCellBottomFoldLineButtonFont Font.fontSCM(10)
+#define tableViewCellColonLabelFont PYFont.fontSCM(10)
+#define tableViewCellTagFont PYFont.fontSCL(10)
+#define tableViewCellRightFont PYFont.fontSCR(10)
+#define tableViewCellLevelFont PYFont.fontSCL(12)
+#define textFieldFont PYFont.fontSCR(12)
+#define tableViewCellBottomFoldLineButtonFont PYFont.fontSCM(10)
 
-#define BaseJsonViewSearchResultListTableViewCellFont BaseFont.fontSCR(12)
+#define BaseJsonViewSearchResultListTableViewCellFont PYFont.fontSCR(12)
 
 #define tableViewCellFoldLineMaxHeight (30 + tableViewCellBottomMinSpacing + tableViewCellTopMinSpacing)
 #define tableViewCellLevelSpacing 10

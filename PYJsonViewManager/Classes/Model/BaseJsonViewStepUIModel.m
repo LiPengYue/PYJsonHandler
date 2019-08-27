@@ -116,7 +116,7 @@
                 break;
         }
     }
-    handler.setUpFont(BaseFont.fontSCR(12));
+    handler.setUpFont(PYFont.fontSCR(12));
     return handler.str;
 }
 

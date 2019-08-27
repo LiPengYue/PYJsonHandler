@@ -8,7 +8,7 @@
 
 #import "BaseJsonViewSearchResultTableViewHeaderView.h"
 #import "BaseJsonViewCommon.h"
-#import "BaseSize.h"
+#import <PYBaseView/PYBaseView.h>
 
 
 @interface BaseJsonViewSearchResultTableViewHeaderView()
@@ -119,7 +119,7 @@
 
 + (CGFloat) getHWithString: (NSString *)str {
     if (str.length <= 0) return 30;
-   return BaseStringHandler.handler(str).getHeightWithWidthAndFont(BaseSize.screenW - 24,BaseFont.fontSCR(12));
+   return BaseStringHandler.handler(str).getHeightWithWidthAndFont(PYSize.screenW - 24,PYFont.fontSCR(12));
 }
 @end
 

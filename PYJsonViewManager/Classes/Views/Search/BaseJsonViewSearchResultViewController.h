@@ -7,12 +7,12 @@
 //
 
 
-#import "BaseViewController.h"
+#import <PYBaseView/PYBaseView.h>
 #import "BaseJsonViewStepModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseJsonViewSearchResultViewController : BaseViewController
+@interface BaseJsonViewSearchResultViewController : PYBaseViewController
 @property (nonatomic,strong) NSString *searchKey;
 @property (nonatomic,strong) NSArray <BaseJsonViewStepModel *>*modelArray;
 @property (nonatomic,strong) BaseJsonViewStepModel *currentSearchModel;

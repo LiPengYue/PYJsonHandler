@@ -10,8 +10,7 @@
 #import "BaseJsonViewMainView.h"
 #import "BaseJsonViewTableView.h"
 #import "BaseJsonViewSearchView.h"
-#import "BaseViewHeaders.h"
-#import "BaseSize.h"
+#import "PYSize.h"
 
 
 @interface BaseJsonViewMainView()

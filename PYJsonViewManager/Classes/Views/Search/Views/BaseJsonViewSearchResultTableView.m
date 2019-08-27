@@ -10,8 +10,6 @@
 #import "BaseJsonViewSearchResultTableView.h"
 #import "BaseJsonViewSearchResultTableViewHeaderView.h"
 #import "BaseJsonViewTableViewCell.h"
-#import "BaseObjectHeaders.h"
-#import "BaseViewHeaders.h"
 
 
 static NSString *const kBaseJsonViewSearchResultTableViewHeaderViewID = @"kBaseJsonViewSearchResultTableViewHeaderViewID";

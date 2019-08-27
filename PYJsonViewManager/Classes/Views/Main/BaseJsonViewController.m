@@ -10,9 +10,7 @@
 #import "BaseJsonViewController.h"
 #import "BaseJsonViewSearchResultViewController.h"
 #import "BaseJsonViewMainView.h"
-#import "BaseObjectHeaders.h"
-#import "BaseViewHeaders.h"
-#import "BaseSize.h"
+#import "BaseJsonViewCommon.h"
 #import "BaseJsonHeaderView.h"
 
 typedef enum : NSUInteger {
@@ -101,11 +99,11 @@ typedef enum : NSUInteger {
 - (void) registerPanHandlerEvent {
     __weak typeof (self) weakSelf = self;
     self.panHandler.up = ^{
-        if (weakSelf.mainView.top != BaseSize.statusBarH || weakSelf.mainView.height != BaseSize.screenH -  BaseSize.statusBarH) {
+        if (weakSelf.mainView.top != PYSize.statusBarH || weakSelf.mainView.height != PYSize.screenH -  PYSize.statusBarH) {
             [weakSelf hiddenTopheaderView];
             [UIView animateWithDuration:0.25 animations:^{
-                weakSelf.mainView.top = BaseSize.statusBarH;
-                weakSelf.mainView.height = BaseSize.screenH -  BaseSize.statusBarH;
+                weakSelf.mainView.top = PYSize.statusBarH;
+                weakSelf.mainView.height = PYSize.screenH -  PYSize.statusBarH;
                 weakSelf.navBarView.bottom = weakSelf.view.top;
                 weakSelf.mainView.tableView.height = weakSelf.mainView.height;
             }];
@@ -137,7 +135,7 @@ typedef enum : NSUInteger {
     [self.headerView layoutWithWidth:self.headerView.width];
     self.mainView.top = self.navBarView.bottom;
     
-    self.mainView.height = BaseSize.screenH - self.mainView.top;
+    self.mainView.height = PYSize.screenH - self.mainView.top;
     self.mainView.width = self.view.width;
     [self.view addSubview: self.mainView];
     [self.view addSubview: self.headerView];
@@ -305,7 +303,7 @@ typedef enum : NSUInteger {
         self.headerView.bottom = self.navBarView.top;
         if (self.mainView.top != self.navBarView.bottom) {
             self.mainView.top = self.navBarView.bottom;
-            self.mainView.height = BaseSize.screenH - self.mainView.top;
+            self.mainView.height = PYSize.screenH - self.mainView.top;
         }
     }];
 }

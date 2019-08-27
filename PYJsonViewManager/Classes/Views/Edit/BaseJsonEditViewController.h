@@ -7,12 +7,12 @@
 //
 
 
-#import "BaseViewController.h"
+#import <PYBaseView/PYBaseView.h>
 #import "BaseJsonViewStepModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseJsonEditViewController : BaseViewController
+@interface BaseJsonEditViewController : PYBaseViewController
 
 @property (nonatomic,strong) BaseJsonViewStepModel *originModel;
 - (BaseJsonViewStepModel *) getChangedModel;

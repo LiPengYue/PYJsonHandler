@@ -21,8 +21,8 @@
     [super viewDidLoad];
     [self.view addSubview:self.tableView];
     self.tableView.width = self.view.width;
-    self.tableView.top = BaseSize.navTotalH;
-    self.tableView.height = BaseSize.screenH - _tableView.top;
+    self.tableView.top = PYSize.navTotalH;
+    self.tableView.height = PYSize.screenH - _tableView.top;
     [self setupNavBar];
 }
 
@@ -40,8 +40,8 @@
 - (void) setupTableView {
     self.tableView = [[BaseJsonViewSearchResultListTableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
     self.tableView.width = self.view.width;
-    self.tableView.top = BaseSize.screen_navH;
-    self.tableView.height = BaseSize.screenH - self.tableView.top;
+    self.tableView.top = PYSize.screen_navH;
+    self.tableView.height = PYSize.screenH - self.tableView.top;
     __weak typeof(self)weakSelf = self;
     [self.tableView setClickCellBlock:^(BaseJsonViewStepModel * _Nonnull model) {
         if (weakSelf.clickCellBlock) {
