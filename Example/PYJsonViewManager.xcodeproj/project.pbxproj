@@ -22,6 +22,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		E3588963231507A500BEDCA1 /* DebugNetWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3588961231507A500BEDCA1 /* DebugNetWorkViewController.m */; };
+		E37C800E2330AA38004F96F9 /* PYJsonString.m in Sources */ = {isa = PBXBuildFile; fileRef = E37C800D2330AA38004F96F9 /* PYJsonString.m */; };
 		E3A01E9A2314D4DE00979A3F /* PYDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A01E992314D4DE00979A3F /* PYDescriptionViewController.m */; };
 		E3A01EA42314D75C00979A3F /* PYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A01EA32314D75C00979A3F /* PYMainViewController.m */; };
 		E3A01EA62314D96300979A3F /* JsonHandlerDescriptionPDF.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E3A01EA52314D96300979A3F /* JsonHandlerDescriptionPDF.pdf */; };
@@ -69,6 +70,8 @@
 		C8D1C2685B8D6E240F0B6C9F /* Pods-PYJsonViewManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PYJsonViewManager_Example.release.xcconfig"; path = "Target Support Files/Pods-PYJsonViewManager_Example/Pods-PYJsonViewManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E3588961231507A500BEDCA1 /* DebugNetWorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugNetWorkViewController.m; sourceTree = "<group>"; };
 		E3588962231507A500BEDCA1 /* DebugNetWorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugNetWorkViewController.h; sourceTree = "<group>"; };
+		E37C800C2330AA38004F96F9 /* PYJsonString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYJsonString.h; sourceTree = "<group>"; };
+		E37C800D2330AA38004F96F9 /* PYJsonString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYJsonString.m; sourceTree = "<group>"; };
 		E3A01E982314D4DE00979A3F /* PYDescriptionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYDescriptionViewController.h; sourceTree = "<group>"; };
 		E3A01E992314D4DE00979A3F /* PYDescriptionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYDescriptionViewController.m; sourceTree = "<group>"; };
 		E3A01EA22314D75C00979A3F /* PYMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYMainViewController.h; sourceTree = "<group>"; };
@@ -223,6 +226,8 @@
 			children = (
 				E3588962231507A500BEDCA1 /* DebugNetWorkViewController.h */,
 				E3588961231507A500BEDCA1 /* DebugNetWorkViewController.m */,
+				E37C800C2330AA38004F96F9 /* PYJsonString.h */,
+				E37C800D2330AA38004F96F9 /* PYJsonString.m */,
 			);
 			path = JsonHandlerDemo;
 			sourceTree = "<group>";
@@ -451,6 +456,7 @@
 				E3A01EA42314D75C00979A3F /* PYMainViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				E3588963231507A500BEDCA1 /* DebugNetWorkViewController.m in Sources */,
+				E37C800E2330AA38004F96F9 /* PYJsonString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
