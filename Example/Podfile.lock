@@ -9,7 +9,7 @@ PODS:
   - PYBaseView (0.1.8):
     - PYBaseColorHandler
     - PYBaseStringHandler
-  - PYJsonViewManager (0.1.0):
+  - PYJsonViewManager (0.1.1):
     - PYBaseView
 
 DEPENDENCIES:
@@ -32,7 +32,7 @@ SPEC CHECKSUMS:
   PYBaseColorHandler: 27c5875ddfd66672ca47a8d23930fde523720fda
   PYBaseStringHandler: 090d18d116158f49aabff465826c577b1f44f45f
   PYBaseView: 7a3724b8ea9a502fdca62f5e5c675212194cf1f4
-  PYJsonViewManager: 86f092d4dc76604f43f987f8777ea2214aa11a3b
+  PYJsonViewManager: 5fd6e8d6ff0aa96358475bfb9417a22fef301e36
 
 PODFILE CHECKSUM: 5cec2fe8d83eeaf7e3a88ad049175d05f989db54
 

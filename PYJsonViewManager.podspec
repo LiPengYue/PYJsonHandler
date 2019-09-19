@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PYJsonViewManager'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'BaseJsonViewController是一个用OC编写的提供了搜索、插入、编辑、查看路径、复制json/value等功能的Json可视化编辑工具'
 
   s.description      = <<-DESC
