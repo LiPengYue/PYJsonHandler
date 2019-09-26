@@ -130,9 +130,14 @@ UITextFieldDelegate
     textField.returnKeyType = UIReturnKeySearch;
     textField.clearButtonMode = UITextFieldViewModeWhileEditing;
     textField.leftView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 10, 10)];
-    textField.placeholder = placeholder;
     textField.font = textFieldFont;
-    [textField setValue: textFieldFont forKeyPath:@"_placeholderLabel.font"];
+    textField.attributedPlaceholder
+    = BaseAttributedStrHandler
+    .handle(placeholder)
+    .setUpFont(textFieldFont)
+    .setUpColor(placeholderColor)
+    .str;
+    
     textField.layer.cornerRadius = 4;
     textField.layer.borderColor = messageColor.CGColor;
     textField.layer.borderWidth = 1;

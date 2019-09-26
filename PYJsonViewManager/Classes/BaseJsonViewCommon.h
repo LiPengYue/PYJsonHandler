@@ -29,6 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define cellBackgroundSearchReslutColor BaseColorHandler.cHex(0xd3f6f3)
 #define cellBackgroundCurrentSearchColor BaseColorHandler.cHex(0x93b5b3)
 #define discColor BaseColorHandler.cHex(0xAFAFAF)
+#define placeholderColor BaseColorHandler.cHex(0xFAFAFA)
 
 #define cellLevelLabelColor BaseColorHandler.cHex(0xCCCC99)
 #define messageColor BaseColorHandler.cHex(0xdff0ea)

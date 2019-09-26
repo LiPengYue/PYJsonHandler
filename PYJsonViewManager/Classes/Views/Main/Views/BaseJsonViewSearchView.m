@@ -153,8 +153,15 @@ UIScrollViewDelegate
         _searchTextView.returnKeyType = UIReturnKeySearch;
         _searchTextView.clearButtonMode = UITextFieldViewModeWhileEditing;
         _searchTextView.leftView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 10, 10)];
-        _searchTextView.placeholder = @"输入搜索内容";
-        _searchTextView.layer.cornerRadius = 4;
+//        _searchTextView.placeholder = @"输入搜索内容";
+        _searchTextView.attributedPlaceholder
+        = BaseAttributedStrHandler
+        .handle(@"输入搜索内容")
+        .setUpColor(placeholderColor)
+        .setUpFont(textFieldFont)
+        .str;
+        
+                _searchTextView.layer.cornerRadius = 4;
         _searchTextView.layer.borderColor = messageColor.CGColor;
         _searchTextView.layer.borderWidth = 1;
         _searchTextView.leftViewMode = UITextFieldViewModeAlways;
